@@ -1,9 +1,9 @@
 import React from "react";
 
-// import { Container } from './styles';
+import AuthExample from "./routes";
 
 const App: React.FC = () => {
-  return <div />;
+  return <AuthExample />;
 };
 
 export default App;

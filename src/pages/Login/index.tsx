@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./styles";
+import "./styles.css";
 
 const Login: React.FC = () => {
-  return <div />;
+  return <div>LOGIN</div>;
 };
 
 export default Login;

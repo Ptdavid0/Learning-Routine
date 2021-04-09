@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./styles";
+import "./styles.css";
 
 const List: React.FC = () => {
-  return <div />;
+  return <div>LIST</div>;
 };
 
 export default List;
