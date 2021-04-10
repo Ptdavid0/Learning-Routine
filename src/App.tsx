@@ -1,9 +1,9 @@
 import React from "react";
-
-import AuthExample from "./routes";
+import AppRouter from "./routes/Route";
+import "./App.css";
 
 const App: React.FC = () => {
-  return <AuthExample />;
+  return <AppRouter />;
 };
 
 export default App;
