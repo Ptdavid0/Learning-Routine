@@ -21,8 +21,7 @@ const Login: React.FC = () => {
     <div className="container">
       <div className="signin-div">
         <div>
-          <span>{user || "Welcome to CodeLeap network!"}</span>
-          <span>{username}</span>
+          <span>Welcome to CodeLeap network!</span>
         </div>
         <div>
           <Form
@@ -43,7 +42,11 @@ const Login: React.FC = () => {
               />
             </Form.Item>
             <Form.Item>
-              <Button className="signin-button" htmlType="submit">
+              <Button
+                className="signin-button"
+                htmlType="submit"
+                disabled={username ? false : true}
+              >
                 ENTER
               </Button>
             </Form.Item>
