@@ -1,10 +1,8 @@
-const Actions = {
-  ENTER_USERNAME: "Enter new username for the application",
+import { ENTER_USERNAME } from "./actionsTypes";
 
-  setUsername: (username: string) => ({
-    type: Actions.ENTER_USERNAME,
+export const setUsername = (username: string) => {
+  return {
+    type: ENTER_USERNAME,
     payload: username,
-  }),
+  };
 };
-
-export default Actions;
