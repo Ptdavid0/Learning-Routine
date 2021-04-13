@@ -12,10 +12,14 @@
   flex-direction: column;
   justify-content: space-between;
   width: 25rem;
-  height: 11rem;
+  height: 12rem;
   padding: 1rem;
   background: #ffffff;
   border: 1px solid #cccccc;
+}
+
+.signin-div > div  {
+margin-bottom: 0.5rem;
 }
 
 .signin-div > div > span {

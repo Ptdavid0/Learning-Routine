@@ -1,26 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Form, Input } from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import { AppState } from "../../redux/models";
 import { setUsername } from "../../redux/actions";
 import "./styles.css";
+import { Redirect, useHistory } from "react-router";
+import { login } from "../../routes/Authentication";
 
 const Login: React.FC = () => {
   const username = useSelector((state: AppState) => state.username);
   const dispatch = useDispatch();
+  const history = useHistory();
+
+  const onFinish = () => {
+    history.push("/list");
+  };
 
   return (
     <div className="container">
       <div className="signin-div">
         <div>
           <span>Welcome to CodeLeap network!</span>
-          <span>{username}</span>
         </div>
         <div>
           <Form
             name="basic"
             layout="vertical"
             initialValues={{ remember: true }}
+            onFinish={onFinish}
           >
             <Form.Item
               label="Please enter your username"
@@ -40,6 +47,7 @@ const Login: React.FC = () => {
                 className="signin-button"
                 htmlType="submit"
                 disabled={!username}
+                onClick={() => login(username)}
               >
                 ENTER
               </Button>

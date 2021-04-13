@@ -2,7 +2,7 @@
 export const login = (props, d) => {
     if (d.username === 'user') {
         localStorage.setItem('auth', d)
-        props.history.push('/home');
+        props.history.push('/list');
     }
 }
 

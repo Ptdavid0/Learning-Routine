@@ -15,7 +15,7 @@ const AppRouter = () =>{
       <UserContext.Provider value={value}>
         <Switch>
           <PublicRoute restricted={true} component={Login} path="/" exact />
-          <PrivateRoute component={List} path="/list" exact />
+          <PrivateRoute component={List} path="/list" />
         </Switch>
       </UserContext.Provider>
     </BrowserRouter>
