@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Form, Input } from "antd";
 import { useSelector, useDispatch } from "react-redux";
 import { AppState } from "../../redux/models";
 import { setUsername } from "../../redux/actions";
 import "./styles.css";
-import { Redirect, useHistory } from "react-router";
-import { login } from "../../routes/Authentication";
+import { useHistory } from "react-router";
 
 const Login: React.FC = () => {
   const username = useSelector((state: AppState) => state.username);
@@ -47,7 +46,6 @@ const Login: React.FC = () => {
                 className="signin-button"
                 htmlType="submit"
                 disabled={!username}
-                onClick={() => login(username)}
               >
                 ENTER
               </Button>
