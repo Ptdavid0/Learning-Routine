@@ -46,3 +46,12 @@ margin-bottom: 0.5rem;
   font-weight: bold;
   letter-spacing: 1px;
 }
+
+.signin-button.ant-btn:disabled {
+  background-color: whitesmoke;
+  color: lightgray;
+  
+
+}
+
+
