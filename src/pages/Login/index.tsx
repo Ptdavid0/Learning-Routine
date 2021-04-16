@@ -11,10 +11,6 @@ const Login: React.FC = () => {
   const dispatch = useDispatch();
   const history = useHistory();
 
-  const onFinish = () => {
-    history.push("/list");
-  };
-
   return (
     <div className="container">
       <div className="signin-div">
@@ -26,7 +22,7 @@ const Login: React.FC = () => {
             name="basic"
             layout="vertical"
             initialValues={{ remember: true }}
-            onFinish={onFinish}
+            onFinish={() => history.push("/list")}
           >
             <Form.Item
               label="Please enter your username"
