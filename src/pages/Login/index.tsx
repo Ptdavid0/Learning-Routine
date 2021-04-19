@@ -15,7 +15,7 @@ const Login: React.FC = () => {
     <div className="container">
       <div className="signin-div">
         <div>
-          <span>Welcome to CodeLeap network!</span>
+          <span>Welcome to Learning network!</span>
         </div>
         <div>
           <Form
