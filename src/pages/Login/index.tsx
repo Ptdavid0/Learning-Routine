@@ -15,7 +15,10 @@ const Login: React.FC = () => {
     <div className="container">
       <div className="signin-div">
         <div>
-          <span>Welcome to Learning network!</span>
+          <span>Welcome to the League!</span>
+          <span>
+            Keep up with your development and score from League of Legends{" "}
+          </span>
         </div>
         <div>
           <Form
