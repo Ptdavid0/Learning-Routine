@@ -17,7 +17,7 @@ const Login: React.FC = () => {
         <div>
           <span>Welcome to the League!</span>
           <span>
-            Keep up with your development and score from League of Legends{" "}
+            Keep up with your development and score from League of Legends
           </span>
         </div>
         <div>
