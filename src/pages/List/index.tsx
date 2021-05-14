@@ -17,7 +17,7 @@ const List: React.FC = () => {
 
   useEffect(checkLogin, [checkLogin]);
 
-  return <div>LIST</div>;
+  return <div>Champions</div>;
 };
 
 export default List;
